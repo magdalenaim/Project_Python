@@ -9,10 +9,10 @@ data source: Luke Barousse (github.com/lukebarousse)
 # The Questions
 In my project I want to answer following questions: 
 
-??? 1. What are the skills most in demand for the top 3 most popular data roles?
-??? 2. How are in-demand skills trending for Data Analysts?
-??? 3. How well do jobs and skills pay for Data Analysts?
-??? 4. What are the optimal skills for data analysts to learn? (High Demand AND High Paying) 
+1. What are the skills most in demand for the top 3 most popular data roles?
+2. How are in-demand skills trending for Data Analysts?
+3. How well do jobs and skills pay for Data Analysts?
+4. What are the optimal skills for data analysts to learn? (High Demand AND High Paying) 
 
 # Tools I Used
 For my detailed examination of the data analyst job market, I utilized several essential tools:
@@ -25,7 +25,7 @@ For my detailed examination of the data analyst job market, I utilized several e
 - **Git & GitHub:** version control and sharing.
 
 # Data Preparation and Cleanup
-??? This section outlines the steps taken to prepare the data for analysis, ensuring accuracy and usability.
+This section outlines the steps taken to prepare the data for analysis, ensuring accuracy and usability.
 
 ## Import & Clean Up Data
 I start by importing necessary libraries and loading the dataset, followed by initial data cleaning tasks to ensure data quality.
@@ -49,7 +49,7 @@ df['job_posted_date'] = pd.to_datetime(df['job_posted_date'])
 df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
 ```
 
-## Filter US Jobs
+## Filter Jobs
 I focused on analyzing the job markets in Poland and Czechia. I applied the appropriate filters to the dataset for relevant job roles (job_title_short) and countries (job_country)
 
 ```python
@@ -64,14 +64,12 @@ df_CZ = df[df['job_country'] == 'Czechia']
 
 # The Analysis
 Following Jupyter notebook aimed at investigating specific aspects of the data job market, answering some of the following questions:
-??? questions are ## like a subparagraphs
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
 
 I identified the top 3 job positions in Poland and Czechia and determined the top 5 skills required for each. The following query highlights the skills to focus on based on the specific role you are targeting.
 
 Check Jupyter notebook for details, Chapter: 2. SKILL DEMAND 
-??? should I add link ???
 
 ### Visualize Data
 ```python
@@ -129,7 +127,6 @@ plt.show()
 To identify skill trends for Data Analysts in 2023, I filtered the data analyst positions and grouped the skills by the month of the job postings. This allowed me to determine the top 5 skills for data analysts each month, highlighting their popularity throughout 2023.
 
 Check Jupyter notebook for details, Chapter: 3. SKILLS TREND
-??? should I add link ???
 
 ### Visualize Data
 
@@ -167,7 +164,7 @@ plt.show()
 To determine the highest-paying roles and skills, I focused exclusively on jobs in Poland and Czechia, and examined their median salaries. Initially, I analyzed the salary distributions of common data positions, such as Data Scientist, Data Engineer, and Data Analyst, to understand which roles offer the highest pay.
 
 Check Jupyter notebook for details, Chapter: 4. SALARY ANALYSIS
-??? should I add link ???Salary_Analysis.
+
 #### Visualize Data 
 Firstly, I filtered data for Poland and Czechia and drop values without salary. I created the list of main job_titles for each country and plot them using box plot. 
 ```python
@@ -242,8 +239,6 @@ plt.show()
 ![Highest Paid and Most In-Demand Skills for Data Analysts in Poland and Czechia](images/highest_paid_most_demand_PLCZ.png)
 
 *Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in Poland and Czechia*
-
-!!!!! sprawdzić co jest nie tak z wykresem. dlaczego most in- demand nie jest w kolejności malejącej!!!!!
 
 #### Insights:
 - One of the highest-paying skills in both countries is BigQuery, with job offers exceeding $100K.
