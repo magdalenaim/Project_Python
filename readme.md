@@ -113,7 +113,7 @@ plt.show()
 ```
 
 ### Results
-![Likelihood of Skills Requested in Poland and Czechia Job Postings](images\likehood_skills_CZ_PL.png)
+![Likelihood of Skills Requested in Poland and Czechia Job Postings](images/likehood_skills_CZ_PL.png)
 
 *Bar graph visualizing the salary for the top 3 data roles accordingly in Poland and Czechia, and their top 5 skills associated with each.*
 
@@ -154,7 +154,7 @@ plt.show()
 ```
 
 ### Results
-![Trending Top Skills for Data Analysts in Poland and Czechia](images\likehood_job_postings_CZ_PL.png)
+![Trending Top Skills for Data Analysts in Poland and Czechia](images/likehood_job_postings_CZ_PL.png)
 
 *Bar graph visualizing the trending top skills for data analysts in Poland and Czechia in 2023.*
 
@@ -240,6 +240,7 @@ plt.show()
 #### Results
 
 ![Highest Paid and Most In-Demand Skills for Data Analysts in Poland and Czechia](images/highest_paid_most_demand_PLCZ.png)
+
 *Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in Poland and Czechia*
 
 !!!!! sprawdzić co jest nie tak z wykresem. dlaczego most in- demand nie jest w kolejności malejącej!!!!!
@@ -265,8 +266,10 @@ plt.show()
 ```
 
 #### Results
-![Most Optimal Skills for Data Analysts in Poland and Czechia](images\Most_Optimal_Skills_DA_PLCZ.png)
+![Most Optimal Skills for Data Analysts in Poland and Czechia](images/Most_Optimal_Skills_DA_PLCZ.png)
+
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US.*
+
 #### Insights:
 - The scatter plot shows the relationship between the percentage of Data Analyst jobs requiring specific skills and the median salary for those skills in Poland and Czechia.
 
@@ -295,7 +298,8 @@ plt.show()
 ```
 
 #### Results
-![Most Optimal Skills for Data Analysts in Poland and Czechia](images\Most_Optimal_Skills_colored_DA_PLCZ.png)
+![Most Optimal Skills for Data Analysts in Poland and Czechia](images/Most_Optimal_Skills_colored_DA_PLCZ.png)
+
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US with color labels for technology.*
 
 #### Insights:
